@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed bottom-0 left-0 right-0">
-        <div className="flex items-center justify-around bg-gradient-to-r from-[#3a0d5e] via-[#2b014f] to-[#1a002f] h-20 rounded-t-3xl">
+        <div className="flex items-center justify-around bg-gradient-to-r from-[#28223d] to-[#13121e] h-20">
           <NavLink
             to="/leaderboard"
             onClick={() => setActive("leaderboard")}
