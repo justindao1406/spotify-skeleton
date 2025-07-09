@@ -17,7 +17,7 @@ export default function TabsSection({
   };
 
   return (
-    <div className="px-[4px] mt-10 pr-[160px]">
+    <div className="px-[4px] mt-10 pr-[160px] relative z-0">
       <div className="flex w-full h-[44px] bg-[#434343] rounded-full text-white font-bold text-sm justify-around gap-2 items-center p-1">
         {[
           { label: "Now", value: 0 },
