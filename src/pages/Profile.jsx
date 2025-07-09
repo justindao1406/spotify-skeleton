@@ -13,7 +13,7 @@ import MagicWays from "@/assets/MagicWays.png";
 import { motion } from "framer-motion";
 
 export default function ProfileScreen() {
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTabProfile, setSelectedTabProfile] = useState(0);
   const [dir, setDir] = useState(null);
 
   const img = new Image();
@@ -130,13 +130,13 @@ export default function ProfileScreen() {
 
       {/* Tabs */}
       <TabsSection
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
+        selectedTabProfile={selectedTabProfile}
+        setSelectedTabProfile={setSelectedTabProfile}
         dir={dir}
         setDir={setDir}
       />
 
-      {selectedTab === 0 && (
+      {selectedTabProfile === 0 && (
         <motion.div
           key="now"
           initial={{
@@ -154,7 +154,7 @@ export default function ProfileScreen() {
         </motion.div>
       )}
 
-      {selectedTab === 1 && (
+      {selectedTabProfile === 1 && (
         <motion.div
           key="history"
           initial={{

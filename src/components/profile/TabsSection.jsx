@@ -2,18 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function TabsSection({
-  selectedTab,
-  setSelectedTab,
+  selectedTabProfile,
+  setSelectedTabProfile,
   dir,
   setDir,
 }) {
   const handleTabClick = (val) => {
-    if (typeof selectedTab === "number" && typeof val === "number") {
-      setDir(selectedTab > val ? "r" : "l");
+    if (typeof selectedTabProfile === "number" && typeof val === "number") {
+      setDir(selectedTabProfile > val ? "r" : "l");
     } else if (val === null) {
       setDir(null);
     }
-    setSelectedTab(val);
+    setSelectedTabProfile(val);
   };
 
   return (
@@ -27,14 +27,14 @@ export default function TabsSection({
             onClick={() => handleTabClick(tab.value)}
             className={`relative flex-1 rounded-full h-[36px] archivo-font font-extrabold text-[16px] flex items-center justify-center transition-colors duration-200
                   ${
-                    selectedTab === tab.value
+                    selectedTabProfile === tab.value
                       ? "text-white"
                       : "bg-transparent text-[rgba(255,255,255,0.40)]"
                   }`}
           >
-            {selectedTab === tab.value && (
+            {selectedTabProfile === tab.value && (
               <motion.div
-                layoutId="active-pill"
+                layoutId="active-pill-profile"
                 className="absolute inset-0 bg-[#737373] rounded-full"
                 initial={false}
                 transition={{ type: "spring", stiffness: 500, damping: 35 }}

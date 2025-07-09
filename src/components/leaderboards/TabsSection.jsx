@@ -40,7 +40,7 @@ export default function TabsSection({
             {selectedTab === tab.value && (
               <motion.div
                 layout
-                layoutId="active-pill"
+                layoutId="active-pill-leaderboards"
                 className="absolute inset-0 bg-[#737373] rounded-full"
                 initial={false}
                 transition={{
