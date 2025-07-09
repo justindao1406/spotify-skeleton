@@ -1,4 +1,4 @@
-import { Badge } from "./ui/badge";
+import { Badge } from "../ui/badge";
 import React from "react";
 import ProfileIconSelected from "@/assets/ProfileIconSelected.svg";
 import SearchIcon from "@/assets/SearchIcon.svg";
