@@ -1,0 +1,49 @@
+.arrow {
+  width: 15px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  bottom: -5px;
+  left: -10px;
+  transition: transform 0.4s ease;
+  margin-top: 2px;
+  transform: translate(0, 0);
+}
+
+/* Arrow arms - default "caret down" */
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.4s ease;
+  top: 0;
+}
+
+/* Left arm of V */
+.arrow::before {
+  transform: rotate(-135deg);
+  left: -3px; /* shifted left */
+}
+
+/* Right arm of V */
+.arrow::after {
+  transform: rotate(135deg);
+  left: 3px; /* shifted right */
+}
+
+/* When dropdown is active (caret up) */
+.active {
+  transform: translateY(-6px);
+}
+
+.active::before {
+  transform: rotate(-45deg);
+}
+
+.active::after {
+  transform: rotate(45deg);
+}

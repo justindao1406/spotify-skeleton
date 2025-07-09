@@ -20,7 +20,7 @@ const App = () => {
 
         <Route element={<MainLayout />}>
           <Route path="/profile" element={<Profile />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/leaderboards" element={<Leaderboard />} />
           <Route path="/search" element={<Search />} />
           <Route path="*" element={<NotFound />} />
         </Route>
